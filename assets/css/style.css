@@ -1,0 +1,21 @@
+.charImage, .enemyCharImagex{
+    width: 150px;
+    height: 100px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.character{
+    background-color: white;
+    border: dotted green 2px;
+}
+
+.charText, .charHealthPoints{
+    text-align: center !important;
+}
+
+.sectionHeadings{
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 30px;
+font-style: italic;
+}
