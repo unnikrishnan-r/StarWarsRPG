@@ -216,7 +216,7 @@
                             }));
 
                             var currentImage = $('#enemyCharImage' + starWarsChar[i].charNumber);
-                            currentImage.wrap('<a href="https://www.google.com" target="_blank""</a>');
+                            currentImage.wrap('<a href="#"</a>');
                         }
 
 
@@ -227,10 +227,13 @@
 
             initialPageSetup();
             $('.charImage').on('click', function () {
-                console.log("clicked a char");
+                // console.log("clicked a char");
                 var clickedChar = $(this).attr("characterNumber");
                 console.log(clickedChar);
                 selectedChar(clickedChar);
+                console.log('Checking if accessing charImage class is working ');
+                console.log($('.charImage'));
+
                 console.log('Checking if accessing enemyCharImagx class is working ');
                 console.log($('.enemyCharImagex'));
 
