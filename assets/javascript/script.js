@@ -64,6 +64,7 @@ $(document).ready(function () {
         $('.container').css({
             'background-image': 'url(' + bgImageUrl + ')',
             'background-repeat': 'no-repeat',
+            'background-size' : 'cover',
             'height' : '100vh'
         });
 
@@ -77,7 +78,7 @@ $(document).ready(function () {
 
             for (var i = 0; i < 4; i++) {
                 $('#characterRow').append($('<div>', {
-                    class: 'col-2 character',
+                    class: 'col-3 character',
                     id: 'charNumber' + starWarsChar[i].charNumber
                 }));
                 $('#charNumber' + starWarsChar[i].charNumber).append($('<div>', {
@@ -85,7 +86,7 @@ $(document).ready(function () {
                     text: starWarsChar[i].name
                 }));
                 $('#charNumber' + starWarsChar[i].charNumber).append($('<img>', {
-                    class: 'charImage',
+                    class: 'charImage img-fluid ',
                     id: 'charImage' + starWarsChar[i].charNumber,
                     src: starWarsChar[i].imageUrl,
                     attr: {
@@ -170,7 +171,7 @@ $(document).ready(function () {
     function selectedChar(clickedChar) {
         {
             $('#yourCharacter').append($('<div>', {
-                class: 'col col-2 character',
+                class: 'col col-3 character',
                 id: 'yourCharacter' + starWarsChar[clickedChar].charNumber
             }));
 
@@ -179,7 +180,7 @@ $(document).ready(function () {
                 text: starWarsChar[clickedChar].name
             }));
             $('#yourCharacter' + starWarsChar[clickedChar].charNumber).append($('<img>', {
-                class: 'charImage',
+                class: 'charImage img-fluid ',
                 id: 'yourCharImage' + starWarsChar[clickedChar].charNumber,
                 src: starWarsChar[clickedChar].imageUrl,
                 attr: {
@@ -199,7 +200,7 @@ $(document).ready(function () {
                 if (i != clickedChar) {
 
                     $('#enemyCharacters').append($('<div>', {
-                        class: 'col-2 enemyCharacter',
+                        class: 'col-3 enemyCharacter',
                         id: 'enemyCharNumber' + starWarsChar[i].charNumber
                     }));
                     $('#enemyCharNumber' + starWarsChar[i].charNumber).append($('<div>', {
@@ -209,7 +210,7 @@ $(document).ready(function () {
                     $('#enemyCharNumber' + starWarsChar[i].charNumber).append($('<img>', {
                         id: 'enemyCharImage' + starWarsChar[i].charNumber,
                         src: starWarsChar[i].imageUrl,
-                        class: 'enemyImages',
+                        class: 'enemyImages img-fluid',
                         attr: {
                             'enemycharacterNumber': starWarsChar[i].charNumber
                         }
@@ -249,7 +250,7 @@ $(document).ready(function () {
             $('#gameMessageText').text('');
 
             $('#defenderCharacter').append($('<div>', {
-                class: 'col col-2 defenderCharacter',
+                class: 'col col-3 defenderCharacter',
                 id: 'defenderCharacter' + starWarsChar[clickedChar].charNumber
             }));
 
@@ -258,7 +259,7 @@ $(document).ready(function () {
                 text: starWarsChar[clickedChar].name
             }));
             $('#defenderCharacter' + starWarsChar[clickedChar].charNumber).append($('<img>', {
-                class: 'defenderImage',
+                class: 'defenderImage img-fluid ',
                 id: 'defenderCharImage' + starWarsChar[clickedChar].charNumber,
                 src: starWarsChar[clickedChar].imageUrl,
                 attr: {

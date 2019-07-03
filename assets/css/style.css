@@ -1,29 +1,15 @@
 .charImage, .enemyImages, .defenderImage {
-    width: 150px;
+    width: 180px;
     height: 100px;
-    padding: 10px;
-    margin: 5px;
-}
-
-.enemyCharacter {
-    background-color: red;
-    border: dotted green 2px;
-}
-
-.defenderCharacter {
-    background-color: black;
-    border: dotted green 2px;
-    color: white;
-}
-
-.character {
-    background-color: white;
-    border: dotted green 2px;
+    /* padding: 10px; */
+    margin-left: 45px;
 }
 
 .charText, .defenderText, #gameMessageText, .charHealthPoints, .enemyHealthPoints, .defenderHealthPoints {
-    text-align: center !important;
+    font-size : 20px;
 }
+
+
 
 .sectionHeadings {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -32,9 +18,5 @@
     color: white;
 }
 
-#gameMessageText{
-    color: red;
-    font-size: 20px;
-    font-style: italic;
 
-}
+
