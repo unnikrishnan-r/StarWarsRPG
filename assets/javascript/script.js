@@ -1,6 +1,6 @@
 $(document).ready(function () {
     var bgImageUrl =
-        "./assets/images/Star_Wars_Star_Wars_The_Force_Awakens_movie_poster_Film_posters-1159543.jpg!d";
+        "./assets/images/star-wars-spaceships-x-wing.jpg";
 
     var attackCount = 0;
     var defeatedEnemyCount = 0;
